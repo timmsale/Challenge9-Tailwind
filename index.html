@@ -4,17 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="screen.css">
+    <title>Challenge 9</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="./screen.css" rel="stylesheet">
   </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-    <script src="index.js"></script>
+  <body>   
+
+<nav class="bg-white dark:bg-gray-900 w-full">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  
+  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+    
+      <button type="button" class="text-black bg-white active:bg-gray-300 hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><i class="fa-solid fa-filter"></i> Filter</button>
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li class="justify-items-center border-2 rounded-md border-gray-200 py-1 px-4">
+        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent  md:hover:text-gray-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-gray-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Popular <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+          </svg>
+        </button>
+                    <!-- Dropdown menu -->
+                    <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                      <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Popular</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">News & Noteworthy</a>
+                        </li>
+                      </ul>
+                  </div>
+      </li>
+      <li>
+        <a href="#" class=" block py-2 px-3 text-gray-900 rounded active:bg-gray-300 active:rounded-2xl hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Discover</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Animation</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Branding</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Illustration</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Mobile</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Print</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-gray-700 md:p-0 dark:text-white md:dark:hover:text-gray-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<div class="container text-center p-8">
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img src="/dribbble/dribble1.gif" class="card-img-top" alt="gif of dribble1" style="width: 400px;">
+        <div class="flex-auto content-evenly">
+          <div class="inline-block justify-left m-x-1">
+            <img class="inline-block h-10 w-10 py-1 rounded-full" src="profilepics/sm_logo.png" alt="Siege Media logo">
+            <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 ">Siege Media</span>
+            <span class="inline-block bg-gray-300 rounded-lg px-1 py-1 text-sm font-semibold uppercase text-white mr-2 mb-2">Team</span>
+          </div>
+          <div class="inline-block justify-right">
+            <span class="inline-block"><i class="fa-solid fa-heart"></i></span>
+            <span class="inline-block"><p class="likes">193</p></span>
+            <span class="inline-block self-center"><i class="fa-solid fa-eye"></i></span>
+             <span class="inline-block"><p class="views">67.4k</p></span>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img src="/dribbble/dribbble2.png" class="card-img-top" alt="art of dribble2" style="width: 400px;">
+        <div class="flex-auto content-evenly">
+          <div class="inline-block justify-left m-x-1">
+            <img class="inline-block h-10 w-10 py-1 rounded-full" src="profilepics/oc_logo.jpg" alt="Orman Clark profile pic">
+            <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 ">Orman Clark</span>
+            <span class="inline-block bg-gray-300 rounded-lg px-1 py-1 text-sm font-semibold uppercase text-white mr-2 mb-2">Pro</span>
+          </div>
+          <div class="inline-block justify-right">
+            <span class="inline-block"><i class="fa-solid fa-heart"></i></span>
+            <span class="inline-block"><p class="likes">98</p></span>
+            <span class="inline-block self-center"><i class="fa-solid fa-eye"></i></span>
+             <span class="inline-block"><p class="views">24.2k</p></span>
+          </div>
+          </div>
+      </div>    </div>
+    <div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img src="/dribbble/dribbble3.png" class="card-img-top" alt="art of dribble3" style="width: 400px;">
+        <div class="flex-auto content-evenly">
+          <div class="inline-block justify-left m-x-1">
+            <img class="inline-block h-10 w-10 py-1 rounded-full" src="profilepics/jc_logo.png" alt="Jordan Cheung profile pics">
+            <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 ">Jordan Cheung</span>
+            <span class="inline-block bg-gray-300 rounded-lg px-1 py-1 text-sm font-semibold uppercase text-white mr-2 mb-2"></span>
+          </div>
+          <div class="inline-block justify-right">
+            <span class="inline-block"><i class="fa-solid fa-heart"></i></span>
+            <span class="inline-block"><p class="likes">176</p></span>
+            <span class="inline-block self-center"><i class="fa-solid fa-eye"></i></span>
+             <span class="inline-block"><p class="views">57.1</p></span>
+          </div>
+          </div>
+      </div>    </div>
+    <div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img src="/dribbble/dribbble4.png" class="card-img-top" alt="art of dribble4" style="width: 400px; height: 285px;">
+        <div class="flex-auto content-evenly">
+          <div class="inline-block justify-left m-x-1">
+            <img class="inline-block h-10 w-10 py-1 rounded-full" src="profilepics/ac_logo.png" alt="Aldo Crusher profile pic">
+            <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 ">Aldo Crusher</span>
+            <span class="inline-block bg-gray-300 rounded-lg px-1 py-1 text-sm font-semibold uppercase text-white mr-2 mb-2">Pro</span>
+          </div>
+          <div class="inline-block justify-right">
+            <span class="inline-block"><i class="fa-solid fa-heart"></i></span>
+            <span class="inline-block"><p class="likes">65</p></span>
+            <span class="inline-block self-center"><i class="fa-solid fa-eye"></i></span>
+             <span class="inline-block"><p class="views">6.7k</p></span>
+          </div>
+          </div>
+      </div>    </div>
+    <div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img src="/dribbble/dribbble5.png" class="card-img-top" alt="Canto advertisment" style="width: 400px;">
+        <div class="flex-auto content-evenly">
+          <div class="inline-block justify-left m-x-1">
+            <img class="inline-block h-10 w-10 py-1 rounded-full" src="profilepics/canto_logo.png" alt="Canto logo">
+            <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 ">Canto</span>
+            <span class="inline-block bg-gray-300 rounded-lg px-1 py-1 text-sm font-semibold uppercase text-white mr-2 mb-2"></span>
+          </div>
+          <div class="inline-block justify-right">
+            <span class="inline-block"><p class="likes">Hide ads</p></span>
+            <span class="inline-block"><p class="likes">•</p></span>
+            <span class="inline-block"><p class="likes">Advertise</p></span>
+          </div>
+          </div>
+      </div>    </div>
+    <div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img src="/dribbble/dribbble6.png" class="card-img-top" alt="art of dribbble6" style="width: 400px;">
+        <div class="flex-auto content-evenly">
+          <div class="inline-block justify-left m-x-1">
+            <img class="inline-block h-10 w-10 py-1 rounded-full" src="profilepics/rw-logo.jpg" alt="Ramy Wafaa">
+            <span class="inline-block px-3 py-1 text-sm font-semibold text-gray-700 ">Ramy Wafaa</span>
+            <span class="inline-block bg-gray-300 rounded-lg px-1 py-1 text-sm font-semibold uppercase text-white mr-2 mb-2">Pro</span>
+          </div>
+          <div class="inline-block justify-right">
+            <span class="inline-block"><i class="fa-solid fa-heart"></i></span>
+            <span class="inline-block"><p class="likes">513</p></span>
+            <span class="inline-block self-center"><i class="fa-solid fa-eye"></i></span>
+             <span class="inline-block"><p class="views">143k</p></span>
+          </div>
+          </div>
+      </div>    </div>
+
+    
+
+  </div>
+
+</div>
+
+
+
+     
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
   </body>
 </html>
